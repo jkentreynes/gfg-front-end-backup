@@ -2,7 +2,9 @@
   "name": "gfg-gpe-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "dependencies": {
+    "history": "^4.5.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
@@ -17,12 +19,18 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "mocha": "^3.2.0",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.2",
     "react-addons-test-utils": "^15.4.2",
     "react-scripts": "0.9.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "code-cover": "",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

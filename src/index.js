@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App/App';
+import { browserHistory } from 'react-router';
+// import { createHistory } from 'history';
+
+import InitRouter from './containers/routers';
+
 import './index.css';
 
+// const history = useRouterHistory(createHistory)({
+//   basename: '/{}'
+// })
 ReactDOM.render(
-  <App />,
+  <InitRouter history={browserHistory} />,
   document.getElementById('root')
 );
