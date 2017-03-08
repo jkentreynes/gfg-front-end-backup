@@ -1,9 +1,38 @@
 language: node_js
 node_js:
-  - 6
-cache:
-  directories:
-    - node_modules
-script:
-  - npm test
+- '7'
+
+#TODO caching of node_modules
+before_install:
+  - npm install
+  - npm install -g github-changes
+install:
+  # Install any dependencies required for building your site here.
+  # `awscli` is required for invalidation of CloudFront distributions and sync file to s# bucket
+  - pip install --user awscli
   - npm run build
+
+# This is needed to avoid building all the tags pushed by travis
+branches:
+  except:
+    - /^v?\d+\.\d+\.\d+$/
+    - master
+
+branches:
+  only:
+    - develop
+
+#script:
+  # TODO launch unit test
+
+deploy:
+  # Build "images" on develop merge
+  - provider: script
+    script:
+      - ./cicd_scripts/cicd.sh
+    skip_cleanup: true
+    on:
+      branch: develop
+
+#after_deploy:
+ # TODO Launch integration test for uat env
