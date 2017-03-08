@@ -36,3 +36,10 @@ deploy:
 
 #after_deploy:
  # TODO Launch integration test for uat env
+
+addons:
+ apt:
+   sources:
+     - ubuntu-toolchain-r-test
+   packages:
+     - g++-4.8
