@@ -7,9 +7,14 @@ echo "=================================================="
 
 # Build a tag
 bash ./cicd_scripts/build.sh
-BUILD_TAG=${BUILD_TAG}
-echo "New tag $BUILD_TAG..."
 
-# deploy a tag
+# deploy in UAT
 bash ./cicd_scripts/deploy.sh
+
+# Launch integration/e@e2 testing
+npm run functional-tests
+
+# deploy in PROD
+# TODO
+
 
