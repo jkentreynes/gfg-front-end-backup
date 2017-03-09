@@ -91,7 +91,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: 'http://uat.com'
+    baseUrl: process.env.UAT_ENDPOINT,
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -226,6 +226,9 @@ exports.config = {
     // }
     onPrepare: function() {
         console.log('let\'s go');
+    },
+    before: function() {
+        browser.windowHandleSize( {width: 1550, height: 2000} );
     },
     onComplete: function() {
         console.log('that\'s it');
