@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 09:33 +00:00)
+### upcoming (2017/03/09 09:53 +00:00)
+- [#18](https://github.com/GFG/gfg-gpe-frontend/pull/18) test(wdio): fail smoke test (@jkentreynes)
+
+### v0.1.13 (2017/03/09 09:33 +00:00)
 - [#17](https://github.com/GFG/gfg-gpe-frontend/pull/17) test(wdio): add switch case logic to specs field (@jkentreynes)
 
 ### v0.1.12 (2017/03/09 08:54 +00:00)
