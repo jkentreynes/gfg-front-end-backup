@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 07:33 +00:00)
+### upcoming (2017/03/09 07:43 +00:00)
+- [#12](https://github.com/GFG/gfg-gpe-frontend/pull/12) chore(travis): optimize travis global install (@lossingalex)
+
+### v0.1.8 (2017/03/09 07:33 +00:00)
 - [#8](https://github.com/GFG/gfg-gpe-frontend/pull/8) launch unit and functional testing in cicd travis (@lossingalex)
 
 ### v0.1.7 (2017/03/09 07:28 +00:00)
