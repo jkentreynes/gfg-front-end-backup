@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 08:00 +00:00)
+### upcoming (2017/03/09 08:54 +00:00)
+- [#16](https://github.com/GFG/gfg-gpe-frontend/pull/16) chore(cicd): deploy script using args and env var (@lossingalex)
+
+### v0.1.11 (2017/03/09 08:00 +00:00)
 - [#15](https://github.com/GFG/gfg-gpe-frontend/pull/15) test(functional): fix test (@lossingalex)
 
 ### v0.1.10 (2017/03/09 07:55 +00:00)
