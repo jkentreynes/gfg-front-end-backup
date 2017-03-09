@@ -11,5 +11,6 @@ it('renders without crashing', () => {
 
 it('render and have p have classname call App-intro', () => {
   const app = shallow(<App />);
+  expect(true).to.equal(false);
   expect(app.find('.App-intro')).to.have.length(1);
 });
