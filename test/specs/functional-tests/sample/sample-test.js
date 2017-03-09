@@ -15,7 +15,7 @@ describe( 'Sample Test', function () {
 	} );
 
 	it( 'Should be at app page', function () {
-		browser.url( '/app' )
+		browser.url( '/app' );
 		expect( samplePage.getAppHeaderText() ).toBe( testData.appHeader );
 	} );
 } );
