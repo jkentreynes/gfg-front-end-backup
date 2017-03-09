@@ -1,6 +1,10 @@
 ## Change Log
 
-### upcoming (2017/03/09 07:43 +00:00)
+### upcoming (2017/03/09 07:55 +00:00)
+- [#14](https://github.com/GFG/gfg-gpe-frontend/pull/14) test(functional): fail functional test to check ci/cd (@lossingalex)
+- [#13](https://github.com/GFG/gfg-gpe-frontend/pull/13) test(unit): fail test for checking ci/cd (@lossingalex)
+
+### v0.1.9 (2017/03/09 07:43 +00:00)
 - [#12](https://github.com/GFG/gfg-gpe-frontend/pull/12) chore(travis): optimize travis global install (@lossingalex)
 
 ### v0.1.8 (2017/03/09 07:33 +00:00)
