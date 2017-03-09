@@ -2,9 +2,10 @@ language: node_js
 node_js:
 - '7'
 env:
- - CXX=g++-4.8
- - UAT_ENDPOINT=http://gfg.pricing-engine.uat.s3-website-ap-southeast-1.amazonaws.com
- - UAT_S3_URI=s3://gfg.pricing-engine.uat
+  global:
+    - CXX=g++-4.8
+    - UAT_ENDPOINT=http://gfg.pricing-engine.uat.s3-website-ap-southeast-1.amazonaws.com
+    - UAT_S3_URI=s3://gfg.pricing-engine.uat
 sudo:
  required
 
