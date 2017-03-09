@@ -11,4 +11,4 @@ echo "=================================================="
 # AWS_SECRET_ACCESS_KEY
 # AWS_DEFAULT_REGION
 
-aws s3 sync build s3://gfg.pricing-engine.uat --delete
+aws s3 sync build ${UAT_S3_URI} --delete
