@@ -1,5 +1,6 @@
 'use strict';
 
+var testData   = require( './sample-data.json' );
 var samplePage = require( '../../page-objects/sample.page.js' );
 
 describe( 'Sample Test', function () {
