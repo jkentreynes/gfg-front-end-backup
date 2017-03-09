@@ -1,18 +1,26 @@
 language: node_js
+
 node_js:
-- '7'
+  - '7'
+
 env:
   global:
     - CXX=g++-4.8
     - UAT_ENDPOINT=http://gfg.pricing-engine.uat.s3-website-ap-southeast-1.amazonaws.com
     - UAT_S3_URI=s3://gfg.pricing-engine.uat
+
 sudo:
  required
+
+services:
+  - docker
 
 #TODO caching of node_modules
 before_install:
   - npm install
   - npm install -g github-changes
+  - docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.0.1-germanium
+  
 install:
   # Install any dependencies required for building your site here.
   # `awscli` is required for invalidation of CloudFront distributions and sync file to s# bucket
