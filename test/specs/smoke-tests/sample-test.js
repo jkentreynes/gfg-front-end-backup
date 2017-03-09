@@ -7,4 +7,9 @@ describe( 'Sample Test', function () {
 		browser.url( '/' );
 		samplePage.clickApp();
 	} );
+	it( 'Should be at app page', function () {
+		browser.url( '/app' );
+		expect( true ).toBe( false );
+		expect( samplePage.getAppHeaderText() ).toBe( testData.appHeader );
+	} );
 } );

@@ -13,10 +13,10 @@ echo "=================================================="
 echo "=============     STARTING CI/CD     ============="
 echo "=================================================="
 
-# # Build a tag
+# Build a tag
 bash ./cicd_scripts/build.sh
 
-# # Deploy in UAT
+# Deploy in UAT
 bash ./cicd_scripts/deploy.sh ${UAT_S3_URI}
 
 # Launch function testing
