@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 10:09 +00:00)
+### upcoming (2017/03/09 10:18 +00:00)
+- [#20](https://github.com/GFG/gfg-gpe-frontend/pull/20) test(wdio): add test data in smoke sample-test.js (@jkentreynes)
+
+### v0.1.15 (2017/03/09 10:09 +00:00)
 - [#19](https://github.com/GFG/gfg-gpe-frontend/pull/19) test(wdio): fix smoke test (@jkentreynes)
 
 ### v0.1.14 (2017/03/09 09:53 +00:00)
