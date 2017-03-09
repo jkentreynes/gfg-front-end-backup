@@ -6,7 +6,6 @@ var samplePage = require( '../../page-objects/sample.page.js' );
 describe( 'Sample Test', function () {
 	it( 'Should be at index page', function () {
 		browser.url( '/' );
-        expect(true).toBe(false);
 		expect( samplePage.getHeaderText() ).toBe( testData.indexHeader );
 	} );
 
