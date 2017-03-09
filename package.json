@@ -36,7 +36,7 @@
     "build": "npm run build-css && react-scripts build",
     "code-coverage": "npm test -- --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/containers/routers/*js --collectCoverageFrom=!src/index.js",
     "test": "react-scripts test --env=jsdom",
-    "functional-tests": "wdio wdio.conf.js",
+    "front-end-tests": "wdio wdio.conf.js",
     "eject": "react-scripts eject",
     "eslint": "sh hook/pre-commit.sh"
   },

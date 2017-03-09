@@ -13,17 +13,22 @@ echo "=================================================="
 echo "=============     STARTING CI/CD     ============="
 echo "=================================================="
 
-# Build a tag
+# # Build a tag
 bash ./cicd_scripts/build.sh
 
-# deploy in UAT
+# # Deploy in UAT
 bash ./cicd_scripts/deploy.sh ${UAT_S3_URI}
 
 # Launch function testing
-npm run functional-tests
+export TEST_TYPE="functional"
+export TEST_ENDPOINT=${UAT_ENDPOINT}
+npm run front-end-tests
 
-# deploy in PROD
+# Deploy in PROD
 bash ./cicd_scripts/deploy.sh ${PROD_S3_URI}
 
-# TODO launch smock test
+# Launch smock test
+export TEST_TYPE="smoke"
+export TEST_ENDPOINT=${PROD_ENDPOINT}
+npm run front-end-tests
 

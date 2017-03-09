@@ -28,9 +28,16 @@ exports.config = {
     // NPM script (see https://docs.npmjs.com/cli/run-script) then the current working
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
-    specs: [
-        './test/specs/**/*.js'
-    ],
+    specs: ( function() { 
+       switch ( process.env.TEST_TYPE ) {
+            case 'functional' :  
+                return [ './test/specs/functional-tests/**/*.js' ];
+                break;
+            case 'smoke' : 
+                return [ './test/specs/smoke-tests/*.js' ];
+                break;
+       } 
+    } )(),
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -91,7 +98,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: process.env.UAT_ENDPOINT,
+    baseUrl: process.env.TEST_ENDPOINT,
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
