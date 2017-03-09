@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 07:55 +00:00)
+### upcoming (2017/03/09 08:00 +00:00)
+- [#15](https://github.com/GFG/gfg-gpe-frontend/pull/15) test(functional): fix test (@lossingalex)
+
+### v0.1.10 (2017/03/09 07:55 +00:00)
 - [#14](https://github.com/GFG/gfg-gpe-frontend/pull/14) test(functional): fail functional test to check ci/cd (@lossingalex)
 - [#13](https://github.com/GFG/gfg-gpe-frontend/pull/13) test(unit): fail test for checking ci/cd (@lossingalex)
 
