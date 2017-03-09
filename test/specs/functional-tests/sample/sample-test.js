@@ -1,7 +1,7 @@
 'use strict';
 
 var testData   = require( './sample-data.json' );
-var samplePage = require( '../../page-objects/sample.page.js' );
+var samplePage = require( '../../../page-objects/sample.page.js' );
 
 describe( 'Sample Test', function () {
 	it( 'Should be at index page', function () {
