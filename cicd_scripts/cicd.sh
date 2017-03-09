@@ -7,8 +7,9 @@ echo "=================================================="
 
 # Build a tag
 bash ./cicd_scripts/build.sh
-BUILD_TAG=${BUILD_TAG}
-echo "New tag $BUILD_TAG..."
+
+# Launch integration/e@e2 testing
+npm run functional-tests
 
 # deploy a tag
 bash ./cicd_scripts/deploy.sh

@@ -26,8 +26,8 @@ branches:
   only:
     - develop
 
-#script:
-  # TODO launch unit test
+script:
+  - npm run test
 
 deploy:
   # Build "images" on develop merge
