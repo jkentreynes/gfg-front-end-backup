@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 08:54 +00:00)
+### upcoming (2017/03/09 09:33 +00:00)
+- [#17](https://github.com/GFG/gfg-gpe-frontend/pull/17) test(wdio): add switch case logic to specs field (@jkentreynes)
+
+### v0.1.12 (2017/03/09 08:54 +00:00)
 - [#16](https://github.com/GFG/gfg-gpe-frontend/pull/16) chore(cicd): deploy script using args and env var (@lossingalex)
 
 ### v0.1.11 (2017/03/09 08:00 +00:00)
