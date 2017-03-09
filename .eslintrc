@@ -72,6 +72,8 @@
     "valid-typeof": 2,
     "space-before-function-paren": [2, "never"],
     "space-before-blocks": [2, "always"],
-    "brace-style": [2, "1tbs", { "allowSingleLine": true }]
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "import/no-named-as-default": 0,
+    "import/no-named-default": 0
   }
 }

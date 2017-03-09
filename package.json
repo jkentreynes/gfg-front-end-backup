@@ -16,6 +16,7 @@
     "enzyme": "^2.7.1",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-import": "^0.13.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
@@ -36,6 +37,7 @@
     "code-coverage": "npm test -- --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/containers/routers/*js --collectCoverageFrom=!src/index.js",
     "test": "react-scripts test --env=jsdom",
     "functional-tests": "wdio wdio.conf.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "./node_modules/.bin/eslint src --ext .jsx,.js"
   }
 }
