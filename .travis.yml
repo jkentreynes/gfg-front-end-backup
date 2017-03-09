@@ -15,18 +15,6 @@ sudo:
 services:
   - docker
 
-#TODO caching of node_modules
-before_install:
-  - npm install
-  - npm install -g github-changes
-  - docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.0.1-germanium
-  
-install:
-  # Install any dependencies required for building your site here.
-  # `awscli` is required for invalidation of CloudFront distributions and sync file to s# bucket
-  - pip install --user awscli
-  - npm run build
-
 # This is needed to avoid building all the tags pushed by travis
 branches:
   except:
@@ -37,20 +25,32 @@ branches:
   only:
     - develop
 
+
+#TODO caching of node_modules
+before_install:
+  - npm install
+
+install:
+  - npm run build
+
 script:
   - npm run test
 
+before_deploy:
+  # Install any dependencies required for building your site here.
+  # `awscli` is required for invalidation of CloudFront distributions and sync file to s# bucket
+  - pip install --user awscli
+  - npm install -g github-changes
+  - docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.0.1-germanium
+
 deploy:
-  # Build "images" on develop merge
   - provider: script
     script:
+      # Launch CI/CD pipeline scripts
       - ./cicd_scripts/cicd.sh
     skip_cleanup: true
     on:
       branch: develop
-
-#after_deploy:
- # TODO Launch integration test for uat env
 
 addons:
  apt:
