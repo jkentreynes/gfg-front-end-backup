@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 07:18 +00:00)
+### upcoming (2017/03/09 07:28 +00:00)
+- [#11](https://github.com/GFG/gfg-gpe-frontend/pull/11) tests(wdio): make selenium run in docker for CI (@jkentreynes)
+
+### v0.1.6 (2017/03/09 07:18 +00:00)
 - [#10](https://github.com/GFG/gfg-gpe-frontend/pull/10) travis env as global (@lossingalex)
 
 ### v0.1.5 (2017/03/09 07:09 +00:00)
