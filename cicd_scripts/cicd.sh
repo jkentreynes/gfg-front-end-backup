@@ -8,9 +8,13 @@ echo "=================================================="
 # Build a tag
 bash ./cicd_scripts/build.sh
 
+# deploy in UAT
+bash ./cicd_scripts/deploy.sh
+
 # Launch integration/e@e2 testing
 npm run functional-tests
 
-# deploy a tag
-bash ./cicd_scripts/deploy.sh
+# deploy in PROD
+# TODO
+
 
