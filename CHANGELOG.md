@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 07:09 +00:00)
+### upcoming (2017/03/09 07:18 +00:00)
+- [#10](https://github.com/GFG/gfg-gpe-frontend/pull/10) travis env as global (@lossingalex)
+
+### v0.1.5 (2017/03/09 07:09 +00:00)
 - [#9](https://github.com/GFG/gfg-gpe-frontend/pull/9) Feature/travis env s3 (@lossingalex)
 
 ### v0.1.3 (2017/03/09 06:11 +00:00)
