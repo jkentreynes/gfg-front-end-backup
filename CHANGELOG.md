@@ -1,6 +1,6 @@
 ## Change Log
 
-### upcoming (2017/03/09 06:11 +00:00)
+### v0.1.3 (2017/03/09 06:11 +00:00)
 - [#6](https://github.com/GFG/gfg-gpe-frontend/pull/6) dep<config>: add eslint npm command for validate (@yoyeung)
 
 ### v0.1.2 (2017/03/09 03:55 +00:00)
