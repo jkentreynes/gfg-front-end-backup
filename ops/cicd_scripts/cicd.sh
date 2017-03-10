@@ -29,15 +29,15 @@ export TEST_ENDPOINT=${UAT_ENDPOINT}
 npm run front-end-tests
 
 
-#################
-# Deploy in PROD
-#################
-export NODE_ENV="production"
-bash ./ops/cicd_scripts/deploy.sh ${PROD_S3_URI}
-
-# Launch smoke test
-echo "== Starting smoke test =="
-export TEST_TYPE="smoke"
-export TEST_ENDPOINT=${PROD_ENDPOINT}
-npm run front-end-tests
+##################
+## Deploy in PROD
+##################
+#export NODE_ENV="production"
+#bash ./ops/cicd_scripts/deploy.sh ${PROD_S3_URI}
+#
+## Launch smoke test
+#echo "== Starting smoke test =="
+#export TEST_TYPE="smoke"
+#export TEST_ENDPOINT=${PROD_ENDPOINT}
+#npm run front-end-tests
 
