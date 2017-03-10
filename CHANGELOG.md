@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/10 07:56 +00:00)
+### upcoming (2017/03/10 10:12 +00:00)
+- [#27](https://github.com/GFG/gfg-gpe-frontend/pull/27) chore(cicd): re-activate prod deploy (@lossingalex)
+
+### v0.1.20 (2017/03/10 07:56 +00:00)
 - [#26](https://github.com/GFG/gfg-gpe-frontend/pull/26) test(cicd): run css before running test (@lossingalex)
 - [#25](https://github.com/GFG/gfg-gpe-frontend/pull/25) chore(cicd): deploy test for uat only (@lossingalex)
 
