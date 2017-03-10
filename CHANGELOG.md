@@ -1,6 +1,10 @@
 ## Change Log
 
-### upcoming (2017/03/10 07:33 +00:00)
+### upcoming (2017/03/10 07:56 +00:00)
+- [#26](https://github.com/GFG/gfg-gpe-frontend/pull/26) test(cicd): run css before running test (@lossingalex)
+- [#25](https://github.com/GFG/gfg-gpe-frontend/pull/25) chore(cicd): deploy test for uat only (@lossingalex)
+
+### v0.1.19 (2017/03/10 07:33 +00:00)
 - [#24](https://github.com/GFG/gfg-gpe-frontend/pull/24) fix(cicd): path for scripts (@lossingalex)
 - [#23](https://github.com/GFG/gfg-gpe-frontend/pull/23) chore(cicd): deploy config for env (@lossingalex)
 
