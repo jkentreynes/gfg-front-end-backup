@@ -20,7 +20,7 @@ bash ./cicd_scripts/build.sh
 # Deploy in UAT
 #################
 export NODE_ENV="uat"
-bash ./cicd_scripts/deploy.sh UAT ${UAT_S3_URI}
+bash ./cicd_scripts/deploy.sh ${UAT_S3_URI}
 
 # Launch function testing
 echo "== Starting functional test =="
@@ -33,9 +33,9 @@ npm run front-end-tests
 # Deploy in PROD
 #################
 export NODE_ENV="production"
-bash ./cicd_scripts/deploy.sh PROD ${PROD_S3_URI}
+bash ./cicd_scripts/deploy.sh ${PROD_S3_URI}
 
-# Launch smock test
+# Launch smoke test
 echo "== Starting smoke test =="
 export TEST_TYPE="smoke"
 export TEST_ENDPOINT=${PROD_ENDPOINT}

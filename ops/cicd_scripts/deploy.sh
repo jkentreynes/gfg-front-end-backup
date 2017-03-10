@@ -2,8 +2,10 @@
 
 # Deploy to S3 by:
 # - 'npm run build' to generate the 'build' folder
-# - empty the bucket if not in 'production'
-# - deploy with aws s3 sync of 'build' folder, with --delete options to delete inexisting file.
+# - Empty bucket, before push 'build folder to s3, EXCEPT if NODE_ENV set to 'production' value.
+#   Emptying bucket is to make sure testing will be launch on successful file push and not previous file push.
+#   If 'production', will not empty bucket to avoid longer downtime.
+# - Deploy with aws s3 sync of 'build' folder, with --delete options to delete inexisting file.
 #
 # Environment variables are expecting to be set to run :
 # AWS_ACCESS_KEY_ID
@@ -11,15 +13,12 @@
 # AWS_DEFAULT_REGION
 # NODE_ENV
 #
+#
 # Script Usage:
 #   - bash ./deploy.sh ENV S3_URI
 #
 # Input Arguments:
-# ENV ($1): (MANDATORY) Env name to deploy. Ex: uat or prod. Usage:
-#           - Empty bucket, before push 'build folder to s3, EXCEPT if set to 'production' value.
-#             Useful to make sure testing will be launch on successful file push and not previous file push.
-#             If 'PROD', will not empty bucket to avoid longer downtime.
-# S3_URI ($2): (MANDATORY) S3 bucket uri to push build folder
+# S3_URI ($1): (MANDATORY) S3 bucket uri to push build folder
 
 
 set -e # Exit with nonzero exit code if anything fails
@@ -30,18 +29,18 @@ echo "=================================================="
 echo "== Checking inputs =="
 MSG_ARGS="Expecting args: \$1 = ENV for deployment, \$2 = S3 uri for aws s3 cmd line."
 
-#TODO use NODE_ENV instead of args
-ENV=$1
-if [ -z "$ENV" ]
+# Setting ENV
+if [ -z "${NODE_ENV}" ]
 then
-    echo "ENV arg is unset. Stopping script."
-    echo "$MSG_ARGS"
+    echo "NODE_ENV environment variable is not set. Stopping Script."
     exit 1
-else
-    echo "ENV is set to '$ENV'"
 fi
 
-S3_URI=$2
+ENV=${NODE_ENV}
+echo "ENV is set to '$ENV'"
+
+# Setting S3 uri
+S3_URI=$1
 if [ -z "$S3_URI" ]
 then
     echo "S3 uri arg is unset. Stopping script."
@@ -51,6 +50,7 @@ else
     echo "S3 uri is set to '$S3_URI'"
 fi
 
+# re-build folder to deploy
 echo "== Running 'npm run build' =="
 npm run build
 
