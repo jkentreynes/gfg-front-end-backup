@@ -31,14 +31,15 @@
   "scripts": {
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
+    "start-js": "npm run env && react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "build": "npm run env && npm run build-css && react-scripts build",
     "code-coverage": "npm test -- --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/containers/routers/*js --collectCoverageFrom=!src/index.js",
     "test": "react-scripts test --env=jsdom",
     "front-end-tests": "wdio wdio.conf.js",
     "eject": "react-scripts eject",
-    "eslint": "sh hook/pre-commit.sh"
+    "eslint": "sh hook/pre-commit.sh",
+    "env": "sh ops/config/env.sh"
   },
   "pre-commit": [
     "eslint"

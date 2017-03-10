@@ -49,7 +49,7 @@ deploy:
   - provider: script
     script:
       # Launch CI/CD pipeline scripts
-      - ./cicd_scripts/cicd.sh
+      - ./ops/cicd_scripts/cicd.sh
     skip_cleanup: true
     on:
       branch: develop
