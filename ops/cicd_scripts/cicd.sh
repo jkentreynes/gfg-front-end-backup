@@ -14,13 +14,13 @@ echo "=============     STARTING CI/CD     ============="
 echo "=================================================="
 
 # Build a tag
-bash ./cicd_scripts/build.sh
+bash ./ops/cicd_scripts/build.sh
 
 #################
 # Deploy in UAT
 #################
 export NODE_ENV="uat"
-bash ./cicd_scripts/deploy.sh ${UAT_S3_URI}
+bash ./ops/cicd_scripts/deploy.sh ${UAT_S3_URI}
 
 # Launch function testing
 echo "== Starting functional test =="
@@ -33,7 +33,7 @@ npm run front-end-tests
 # Deploy in PROD
 #################
 export NODE_ENV="production"
-bash ./cicd_scripts/deploy.sh ${PROD_S3_URI}
+bash ./ops/cicd_scripts/deploy.sh ${PROD_S3_URI}
 
 # Launch smoke test
 echo "== Starting smoke test =="
