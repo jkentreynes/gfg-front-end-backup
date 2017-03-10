@@ -24,11 +24,13 @@ echo "=============     STARTING DEPLOY    ============="
 echo "=================================================="
 
 echo "== Checking script arguments =="
+MSG_ARGS="Expecting args: \$1 = ENV for deployment, \$2 = S3 uri for aws s3 cmd line."
 
 ENV=$1
 if [ -z "$ENV" ]
 then
-    echo "ENV is unset"
+    echo "ENV arg is unset. Stopping script."
+    echo "$MSG_ARGS"
     exit 1
 else
     echo "ENV is set to '$ENV'"
@@ -37,7 +39,8 @@ fi
 S3_URI=$2
 if [ -z "$S3_URI" ]
 then
-    echo "S3 uri is unset"
+    echo "S3 uri arg is unset. Stopping script."
+    echo "$MSG_ARGS"
     exit 1
 else
     echo "S3 uri is set to '$S3_URI'"
@@ -51,12 +54,11 @@ echo "EMPTY_BUCKET is set to $EMPTY_BUCKET"
 if $EMPTY_BUCKET
 then
     echo "== Starting empty bucket $S3_URI =="
-#    aws s3 rm $S3_URI --recursive
+    aws s3 rm $S3_URI --recursive
 fi
 
 #TODO copy/set config file according to ENV
 
 
-
 echo "== deploying to $S3_URI =="
-#aws s3 sync build $S3_URI --delete
+aws s3 sync build $S3_URI --delete
