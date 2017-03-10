@@ -1,6 +1,10 @@
 ## Change Log
 
-### upcoming (2017/03/10 06:03 +00:00)
+### upcoming (2017/03/10 07:33 +00:00)
+- [#24](https://github.com/GFG/gfg-gpe-frontend/pull/24) fix(cicd): path for scripts (@lossingalex)
+- [#23](https://github.com/GFG/gfg-gpe-frontend/pull/23) chore(cicd): deploy config for env (@lossingalex)
+
+### v0.1.18 (2017/03/10 06:03 +00:00)
 - [#22](https://github.com/GFG/gfg-gpe-frontend/pull/22) docs(tesst): add test readme (@jkentreynes)
 
 ### v0.1.17 (2017/03/10 03:12 +00:00)
