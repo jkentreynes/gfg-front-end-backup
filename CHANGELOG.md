@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/10 03:11 +00:00)
+### upcoming (2017/03/10 06:03 +00:00)
+- [#22](https://github.com/GFG/gfg-gpe-frontend/pull/22) docs(tesst): add test readme (@jkentreynes)
+
+### v0.1.17 (2017/03/10 03:12 +00:00)
 - [#21](https://github.com/GFG/gfg-gpe-frontend/pull/21) Feature/deploy empty s3 bucket (@lossingalex)
 
 ### v0.1.16 (2017/03/09 10:18 +00:00)
