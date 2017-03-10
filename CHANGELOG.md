@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/09 10:18 +00:00)
+### upcoming (2017/03/10 03:11 +00:00)
+- [#21](https://github.com/GFG/gfg-gpe-frontend/pull/21) Feature/deploy empty s3 bucket (@lossingalex)
+
+### v0.1.16 (2017/03/09 10:18 +00:00)
 - [#20](https://github.com/GFG/gfg-gpe-frontend/pull/20) test(wdio): add test data in smoke sample-test.js (@jkentreynes)
 
 ### v0.1.15 (2017/03/09 10:09 +00:00)
