@@ -11,6 +11,12 @@
 # GH_TOKEN: Github personnal token with right to pull, push in the repo
 
 
+set -e # Exit with nonzero exit code if anything fails
+echo "=================================================="
+echo "=============       GIT MERGE        ============="
+echo "=================================================="
+
+
 MERGE_TO_BRANCH=$1
 
 echo "== Checking inputs =="
@@ -41,6 +47,6 @@ echo "== Merging $TMP_MERGE_FROM_BRANCH to $MERGE_TO_BRANCH =="
 git remote set-branches --add origin $MERGE_TO_BRANCH
 git fetch
 git checkout -b $MERGE_TO_BRANCH origin/$MERGE_TO_BRANCH
-git git merge $TMP_MERGE_FROM_BRANCH -X theirs -m "[Travis] Merging from branch $TMP_MERGE_FROM_BRANCH"
+git merge $TMP_MERGE_FROM_BRANCH -X theirs -m "[Travis] Merge Travis branch $TMP_MERGE_FROM_BRANCH"
 git push origin $MERGE_TO_BRANCH
 
