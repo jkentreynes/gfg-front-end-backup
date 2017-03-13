@@ -3,6 +3,13 @@ language: node_js
 node_js:
   - '7'
 
+cache:
+  directories:
+    # Cache project modules
+    - node_modules
+    # Cache global installed modules
+    - $(npm config get prefix)/bin/github-changes
+
 env:
   global:
     - CXX=g++-4.8
