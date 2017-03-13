@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/13 06:44 +00:00)
+### upcoming (2017/03/13 07:04 +00:00)
+- [#32](https://github.com/GFG/gfg-gpe-frontend/pull/32) chore(cicd): fix merge script (@lossingalex)
+
+### v0.1.25 (2017/03/13 06:45 +00:00)
 - [#31](https://github.com/GFG/gfg-gpe-frontend/pull/31) chore(cicd): merge fetch branch to merge to (@lossingalex)
 
 ### v0.1.24 (2017/03/13 06:13 +00:00)
