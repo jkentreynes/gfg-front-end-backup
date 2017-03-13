@@ -36,9 +36,11 @@ git config --global user.name "Travis CI"
 TMP_MERGE_FROM_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 echo "Current branch: $TMP_MERGE_FROM_BRANCH"
 
-echo "== Merging $MERGE_TO_BRANCH to $MERGE_TO_BRANCH =="
-# Merge branch, force change from MERGE_FROM_BRANCH (for solving conflict from npm-shrinkwrap)
-git checkout $MERGE_TO_BRANCH
-git git merge $TMP_MERGE_FROM_BRANCH -X theirs
+echo "== Merging $TMP_MERGE_FROM_BRANCH to $MERGE_TO_BRANCH =="
+# Merge branch, force change from MERGE_FROM_BRANCH (for automatic conflict solving from npm-shrinkwrap for example)
+git remote set-branches --add origin $MERGE_TO_BRANCH
+git fetch
+git checkout -b $MERGE_TO_BRANCH origin/$MERGE_TO_BRANCH
+git git merge $TMP_MERGE_FROM_BRANCH -X theirs -m "[Travis] Merging from branch $TMP_MERGE_FROM_BRANCH"
 git push origin $MERGE_TO_BRANCH
 

@@ -37,14 +37,6 @@ git config --global user.email "builds@travis-ci.com"
 git config --global user.name "Travis CI"
 
 
-echo "== Switching to temporary release branch release-$TAG-Travis-$BUILD_ID =="
-TMP_RELEASE_BRANCH="release-$TAG-Travis-$BUILD_ID"
-git checkout -b "$TMP_RELEASE_BRANCH"
-
-#echo "== Checking out $SOURCE_BRANCH branch =="
-#git checkout $SOURCE_BRANCH
-
-
 # == Bumping Method 1. If package.json major and minor versions match last tag, then increment last tag. Else use package.json major.minor.0.
 # -  Reference: http://phdesign.com.au/programming/auto-increment-project-version-from-travis/ 
 # - Drawback: Rely on last existing tag. Need to make sure last tag exists and follow current regex format (vX.X.X).
@@ -59,6 +51,10 @@ git checkout -b "$TMP_RELEASE_BRANCH"
 echo "== Bumping package.json =="
 TAG=$(npm --no-git-tag-version version patch)
 echo "New tag: $TAG"
+
+echo "== Switching to temporary release branch release-$TAG-Travis-$BUILD_ID =="
+TMP_RELEASE_BRANCH="release-$TAG-Travis-$BUILD_ID"
+git checkout -b "$TMP_RELEASE_BRANCH"
 
 echo "== Generating Changelog =="
 github-changes -o $OWNER -r $REPO -a --only-pulls --token ${GH_TOKEN} --branch $SOURCE_BRANCH --verbose --use-commit-body
