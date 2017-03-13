@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/13 01:22 +00:00)
+### upcoming (2017/03/13 02:05 +00:00)
+- [#29](https://github.com/GFG/gfg-gpe-frontend/pull/29) Feature/precommit unit test (@lossingalex)
+
+### v0.1.22 (2017/03/13 01:22 +00:00)
 - [#28](https://github.com/GFG/gfg-gpe-frontend/pull/28) chore(cicd): node modules caching in Travis (@lossingalex)
 
 ### v0.1.21 (2017/03/10 10:13 +00:00)
