@@ -41,3 +41,6 @@ export TEST_TYPE="smoke"
 export TEST_ENDPOINT=${PROD_ENDPOINT}
 npm run front-end-tests
 
+# Merge to master
+bash ./ops/cicd_scripts/merge.sh master
+
