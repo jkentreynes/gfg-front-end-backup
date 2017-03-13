@@ -42,6 +42,7 @@
     "env": "sh ops/config/env.sh"
   },
   "pre-commit": [
-    "eslint"
+    "eslint",
+    "code-coverage"
   ]
 }
