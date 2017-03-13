@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/13 02:05 +00:00)
+### upcoming (2017/03/13 06:13 +00:00)
+- [#30](https://github.com/GFG/gfg-gpe-frontend/pull/30) Feature/cicd merge master (@lossingalex)
+
+### v0.1.23 (2017/03/13 02:05 +00:00)
 - [#29](https://github.com/GFG/gfg-gpe-frontend/pull/29) Feature/precommit unit test (@lossingalex)
 
 ### v0.1.22 (2017/03/13 01:22 +00:00)
