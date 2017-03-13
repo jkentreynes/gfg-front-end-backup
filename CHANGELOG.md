@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/13 07:04 +00:00)
+### upcoming (2017/03/13 08:58 +00:00)
+- [#33](https://github.com/GFG/gfg-gpe-frontend/pull/33) doc(cicd): quick doc on CI/CD (@lossingalex)
+
+### v0.1.26 (2017/03/13 07:04 +00:00)
 - [#32](https://github.com/GFG/gfg-gpe-frontend/pull/32) chore(cicd): fix merge script (@lossingalex)
 
 ### v0.1.25 (2017/03/13 06:45 +00:00)
