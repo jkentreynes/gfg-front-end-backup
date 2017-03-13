@@ -1,3 +1,37 @@
+
+# GFG Pricing Engine Frontend
+
+## Installation
+
+- npm install
+- npm start
+
+## CICD
+
+#### Pull request
+
+PR should be done on develop
+
+#### Travis CICD
+
+CICD is configure in the travis.ym file.
+Every Merge/Commit to develop will start a Travis CI/CD pipeline job:
+
+- Launch Unit test
+- Bump package.json patch version : v0.0.X. Package.json will be push to develop.
+- Update CHANGELOG.md. CHANGELOG.md will be push to develop.
+- Generate new npm-shrinwrap.json
+- Create and push tag with new version v0.0.X
+- Deploy to UAT
+- Launch Functional / Integration test
+- Deploy to PROD
+- Launch smoke test
+- Merge tag to master
+
+
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
