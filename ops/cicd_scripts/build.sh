@@ -29,8 +29,8 @@ SOURCE_BRANCH='develop'
 BUILD_ID=${TRAVIS_BUILD_NUMBER}
 
 
-#TODO check if can work withuot modifying existing global credentials
-echo "== Setting GIT credentials and checking branches =="
+#TODO check if can work without modifying existing credentials
+echo "== Setting GIT credentials =="
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 git config --global user.email "builds@travis-ci.com"

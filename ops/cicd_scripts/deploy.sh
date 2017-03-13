@@ -15,7 +15,7 @@
 #
 #
 # Script Usage:
-#   - bash ./deploy.sh ENV S3_URI
+#   - bash ./deploy.sh S3_URI
 #
 # Input Arguments:
 # S3_URI ($1): (MANDATORY) S3 bucket uri to push build folder
@@ -27,7 +27,7 @@ echo "=============     STARTING DEPLOY    ============="
 echo "=================================================="
 
 echo "== Checking inputs =="
-MSG_ARGS="Expecting args: \$1 = ENV for deployment, \$2 = S3 uri for aws s3 cmd line."
+MSG_ARGS="Expecting args: \$1 = S3 uri for aws s3 cmd line."
 
 # Setting ENV
 if [ -z "${NODE_ENV}" ]
