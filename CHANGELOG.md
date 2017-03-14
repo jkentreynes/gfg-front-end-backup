@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/13 08:58 +00:00)
+### upcoming (2017/03/14 07:59 +00:00)
+- [#34](https://github.com/GFG/gfg-gpe-frontend/pull/34) docs(test): edit test folder readme.md (@jkentreynes)
+
+### v0.1.27 (2017/03/13 08:58 +00:00)
 - [#33](https://github.com/GFG/gfg-gpe-frontend/pull/33) doc(cicd): quick doc on CI/CD (@lossingalex)
 
 ### v0.1.26 (2017/03/13 07:04 +00:00)
