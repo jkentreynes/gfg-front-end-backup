@@ -1,6 +1,6 @@
 # Functional Tests
 
-***Getting Started - Local Development Environment***
+***Getting Started***
 
 Run the following:
 
@@ -14,8 +14,9 @@ Set Environment Variables
 
 Set TEST_ENDPOINT Environment Variable
 ```
-export TEST_ENDPOINT="http://localhost:3000"
+export TEST_ENDPOINT="<value>"
 ```
+Value is the url you want the tests to run. Eg. http://localhost:5000
 
 Set TEST_TYPE Environment Variable
 ```
