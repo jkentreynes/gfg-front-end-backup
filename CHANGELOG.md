@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/14 07:59 +00:00)
+### upcoming (2017/03/16 09:58 +00:00)
+- [#35](https://github.com/GFG/gfg-gpe-frontend/pull/35) chore(cicd): add prune for travis cached modules + change shrinwrap g… (@lossingalex)
+
+### v0.1.28 (2017/03/14 07:59 +00:00)
 - [#34](https://github.com/GFG/gfg-gpe-frontend/pull/34) docs(test): edit test folder readme.md (@jkentreynes)
 
 ### v0.1.27 (2017/03/13 08:58 +00:00)
