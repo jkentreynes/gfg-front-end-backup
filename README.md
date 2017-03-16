@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/GFG/gfg-gpe-frontend.svg?token=MHUBzpwfVPfzkgqfKppR&branch=master)](https://travis-ci.com/GFG/gfg-gpe-frontend)
 
 # GFG Pricing Engine Frontend
 

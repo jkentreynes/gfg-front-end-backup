@@ -59,6 +59,9 @@ git checkout -b "$TMP_RELEASE_BRANCH"
 echo "== Generating Changelog =="
 github-changes -o $OWNER -r $REPO -a --only-pulls --token ${GH_TOKEN} --branch $SOURCE_BRANCH --verbose --use-commit-body
 
+echo "== Generating npm-shrinkwrap =="
+npm shrinkwrap
+
 echo "== Updating $SOURCE_BRANCH branch with package.json and CHANGELOG.md =="
 git add package.json
 git add CHANGELOG.md
@@ -84,9 +87,6 @@ git push origin $SOURCE_BRANCH
 
 #echo "== Switching back to temporary release branch release-$TAG-Travis-$BUILD_ID to create tag =="
 git checkout $TMP_RELEASE_BRANCH
-
-echo "== Generating npm-shrinkwrap =="
-npm shrinkwrap
 
 echo "== Commiting shrinkwrap =="
 git add npm-shrinkwrap.json
