@@ -13,10 +13,10 @@ cache:
 env:
   global:
     - CXX=g++-4.8
-    - UAT_ENDPOINT=http://gfg.pricing-engine.uat.s3-website-ap-southeast-1.amazonaws.com
-    - UAT_S3_URI=s3://gfg.pricing-engine.uat
-    - PROD_ENDPOINT=http://gfg.pricing-engine.prod.s3-website-ap-southeast-1.amazonaws.com
-    - PROD_S3_URI=s3://gfg.pricing-engine.prod
+    - UAT_ENDPOINT=http://gfg.gpe.uat.s3-website-ap-southeast-1.amazonaws.com
+    - UAT_S3_URI=s3://gfg.gpe.uat
+    - PROD_ENDPOINT=http://gfg.gpe.production.s3-website-ap-southeast-1.amazonaws.com
+    - PROD_S3_URI=s3://gfg.gpe.production
 
 sudo:
  required

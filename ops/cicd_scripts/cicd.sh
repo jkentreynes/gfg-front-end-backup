@@ -20,7 +20,7 @@ bash ./ops/cicd_scripts/build.sh
 # Deploy in UAT
 #################
 export NODE_ENV="uat"
-bash ./ops/cicd_scripts/deploy.sh ${UAT_S3_URI}
+bash ./ops/cicd_scripts/deploy_s3.sh "" ${UAT_S3_URI}
 
 # Launch function testing
 echo "== Starting functional test =="
@@ -33,7 +33,7 @@ npm run front-end-tests
 # Deploy in PROD
 #################
 export NODE_ENV="production"
-bash ./ops/cicd_scripts/deploy.sh ${PROD_S3_URI}
+bash ./ops/cicd_scripts/deploy_s3.sh "arn:aws:iam::727542973384:role/CrossAccount-GPE-CICD" ${PROD_S3_URI}
 
 # Launch smoke test
 echo "== Starting smoke test =="
