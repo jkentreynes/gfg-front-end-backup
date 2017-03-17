@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/16 09:58 +00:00)
+### upcoming (2017/03/17 08:05 +00:00)
+- [#36](https://github.com/GFG/gfg-gpe-frontend/pull/36) Feature/cicd update (#36) (@lossingalex)
+
+### v0.1.29 (2017/03/16 09:58 +00:00)
 - [#35](https://github.com/GFG/gfg-gpe-frontend/pull/35) chore(cicd): add prune for travis cached modules + change shrinwrap g… (@lossingalex)
 
 ### v0.1.28 (2017/03/14 07:59 +00:00)
