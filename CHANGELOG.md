@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/22 03:22 +00:00)
+### upcoming (2017/03/22 06:52 +00:00)
+- [#40](https://github.com/GFG/gfg-gpe-frontend/pull/40) test(wdio): update sample test (@jkentreynes)
+
+### v0.1.33 (2017/03/22 03:22 +00:00)
 - [#39](https://github.com/GFG/gfg-gpe-frontend/pull/39) update<test>- update the unit test and update header css strucutre (@yoyeung)
 
 ### v0.1.32 (2017/03/17 09:25 +00:00)
