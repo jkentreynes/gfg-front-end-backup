@@ -30,6 +30,7 @@
     "react-addons-test-utils": "^15.4.2",
     "react-scripts": "0.9.3",
     "wdio-jasmine-framework": "^0.2.19",
+    "wdio-spec-reporter": "^0.1.0",
     "webdriverio": "^4.6.2"
   },
   "scripts": {

@@ -1,4 +1,8 @@
 {
+  "globals": {
+      "browser": true,
+      "expect": true 
+    },
   "env": {
       "browser": true,
       "mocha": true
