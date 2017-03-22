@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/17 09:24 +00:00)
+### upcoming (2017/03/22 03:22 +00:00)
+- [#39](https://github.com/GFG/gfg-gpe-frontend/pull/39) update<test>- update the unit test and update header css strucutre (@yoyeung)
+
+### v0.1.32 (2017/03/17 09:25 +00:00)
 - [#38](https://github.com/GFG/gfg-gpe-frontend/pull/38) chore(cicd): display build badge (@lossingalex)
 
 ### v0.1.30 (2017/03/17 08:05 +00:00)
