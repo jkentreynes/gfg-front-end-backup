@@ -1,6 +1,9 @@
 ## Change Log
 
-### upcoming (2017/03/22 06:52 +00:00)
+### upcoming (2017/03/22 07:06 +00:00)
+- [#41](https://github.com/GFG/gfg-gpe-frontend/pull/41) test(wdio): update smoke test (@jkentreynes)
+
+### v0.1.34 (2017/03/22 06:53 +00:00)
 - [#40](https://github.com/GFG/gfg-gpe-frontend/pull/40) test(wdio): update sample test (@jkentreynes)
 
 ### v0.1.33 (2017/03/22 03:22 +00:00)
