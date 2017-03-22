@@ -4,7 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import AppRouter from './app.router';
+import { AppRouter } from './app.router';
 import NotFound from '../Notfound';
 
 const InitRouter = props => (

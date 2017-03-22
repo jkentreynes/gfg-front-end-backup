@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import './Header.css';
 
 export const Header = ({ country }) =>
@@ -6,18 +6,29 @@ export const Header = ({ country }) =>
    <div className="navbar">
      <ul className="navbar_l_block">
        <li>
-         <a className="navbar_l_block--product_logo" href={`/${country}`}>
+         <a className="product_logo product_logo--navbar" href={`/${country}`}>
           GPE
          </a>
        </li>
-       <li className="navbar_l_block--venture_logo">
-         <div>
-          <img src="ZALORA" alt="ZALORA" />
+       <li >
+         <div className="venture_logo venture_logo--navbar">
+           <img src="ZALORA" alt="ZALORA" />
          </div>
        </li>
-       <li className="navbar_l_block--country_toggle" >
-         <div src="ZALORA" alt="ZALORA" />
+       <li >
+         <div className="country_toggle country_toggle--navbar" >
+           
+         </div>
+       </li>
+     </ul>
+     <ul className="navbar_r_block">
+       <li >
+         <div className="country_toggle country_toggle--navbar" />
        </li>
      </ul>
    </div>
 );
+
+Header.propTypes = {
+  country: PropTypes.string.isRequired
+};
