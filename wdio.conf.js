@@ -31,7 +31,7 @@ exports.config = {
     specs: ( function() { 
        switch ( process.env.TEST_TYPE ) {
             case 'functional' :  
-                return [ './test/specs/functional-tests/**/*.js' ];
+                return [ './test/specs/functional-tests/login/login.spec.js' ];
                 break;
             case 'smoke' : 
                 return [ './test/specs/smoke-tests/*.js' ];
@@ -151,7 +151,7 @@ exports.config = {
     jasmineNodeOpts: {
         //
         // Jasmine default timeout
-        defaultTimeoutInterval: 10000,
+        defaultTimeoutInterval: 20000,
         //
         // The Jasmine framework allows interception of each assertion in order to log the state of the application
         // or website depending on the result. For example, it is pretty handy to take a screenshot every time

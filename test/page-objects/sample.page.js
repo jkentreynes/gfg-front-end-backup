@@ -1,6 +1,6 @@
 'use strict';
 
-var SamplePage = Object.create( this, {
+const SamplePage = Object.create( this, {
 	appButton : { get : function () { return browser.element( '.Index-intro > a' ) } },
 	appHeader : { get : function () { return browser.element( '.App-header' ) } },
 	header    : { get : function () { return browser.element( '.Index-header > h2' ); } },
