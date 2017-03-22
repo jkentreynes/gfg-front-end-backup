@@ -1,10 +1,14 @@
 import React from 'react';
-import { Route } from 'react-router';
-
+import {
+  Route,
+} from 'react-router-dom';
+import { DefaultLayout } from '../../components/Layouts/DefaultLayout';
+import Index from '../Index';
 import App from '../App';
 
-const AppRouter = (
-  <Route path="app" component={App} />
+export default (props) => (
+  <DefaultLayout {...props} >
+    <Route exact path={`${props.match.url}`} component={Index} />
+    <Route path={`${props.match.url}/app`} component={App} />
+  </DefaultLayout>
 );
-
-export default AppRouter;

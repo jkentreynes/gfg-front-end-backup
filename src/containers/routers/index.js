@@ -1,14 +1,18 @@
 import React from 'react';
-import { Router, Route } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
 import AppRouter from './app.router';
-import Index from '../Index';
-import NotFound from '../notfound';
+import NotFound from '../Notfound';
 
 const InitRouter = props => (
   <Router {...props}>
-    <Route path="/" component={Index} />
-    {AppRouter}
-    <Route path="*" component={NotFound} />
+    <Switch>
+      <Route path="/:country" component={AppRouter} />
+      <Route component={NotFound} />
+    </Switch>
   </Router>
 );
 

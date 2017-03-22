@@ -1,0 +1,5 @@
+@import 'style_variable';
+
+@function em($pixels, $context: $body-font-size) {
+  @return #{$pixels/$context}em
+}

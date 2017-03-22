@@ -75,6 +75,7 @@
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
     "import/no-named-as-default": 0,
     "import/no-named-default": 0,
-    "import/no-extraneous-dependencies":0
+    "import/no-extraneous-dependencies":0,
+    "import/prefer-default-export":0
   }
 }
